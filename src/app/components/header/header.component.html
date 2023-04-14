@@ -1,0 +1,17 @@
+<div class="header-container">
+  <div class="breadcrumb-row">
+    <ng-container *ngFor="let breadcrumb of breadcrumbs; let i = index">
+      <ng-container *ngIf="i !== 0">
+        <span class="breadcrumb-other"> / </span>
+      </ng-container>
+      <span
+        [ngClass]="{ 'breadcrumb-first': i === 0, 'breadcrumb-other': i !== 0 }"
+      >
+        {{ breadcrumb }}
+      </span>
+    </ng-container>
+  </div>
+  <div class="title-row">
+    <span class="page-title">{{ pageTitle }}</span>
+  </div>
+</div>

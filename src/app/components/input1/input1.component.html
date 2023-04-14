@@ -1,0 +1,34 @@
+<!-- InputComponent: A reusable input field that supports text inputs and date pickers.
+  - placeholder: The text to display when the input is empty.
+  - inputType: The type of input field (e.g., 'text', 'password').
+  - iconName: The name of the icon to display at the end of the input field (optional).
+  - useDatepicker: Set to 'true' to display a date picker instead of a regular input field. -->
+<mat-form-field appearance="outline" class="custom-form-field">
+  <mat-label>{{ placeholder }}</mat-label>
+  <ng-container *ngIf="!useDatepicker">
+    <input
+      matInput
+      [type]="inputType"
+      [placeholder]="placeholder"
+      class="custom-input"
+    />
+  </ng-container>
+  <ng-container *ngIf="useDatepicker">
+    <input matInput [matDatepicker]="picker" class="datepicker-input" />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="picker"
+      class="datepicker-toggle"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </ng-container>
+  <ng-container *ngIf="iconName">
+    <button
+      mat-icon-button
+      matSuffix
+      [attr.aria-label]="'Toggle ' + placeholder + ' visibility'"
+    >
+      <mat-icon>{{ iconName }}</mat-icon>
+    </button>
+  </ng-container>
+</mat-form-field>

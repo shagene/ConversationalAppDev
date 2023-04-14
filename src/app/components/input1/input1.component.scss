@@ -1,0 +1,42 @@
+// InputComponent styles:
+// Customize the appearance of the input field and the
+// date picker toggle when using the Angular Material
+// form field with the 'outline' appearance.
+
+.mat-form-field-appearance-outline {
+  .mat-form-field-outline {
+    color: #93186c;
+  }
+
+  .mat-form-field-ripple {
+    background-color: #93186c;
+  }
+
+  input.mat-input-element {
+    &:focus {
+      + .mat-form-field-ripple {
+        background-color: #93186c;
+      }
+    }
+  }
+
+  .mat-form-field-label {
+    color: #93186c;
+    &:not(.mat-form-field-empty) {
+      &::after {
+        background-color: #93186c;
+      }
+    }
+  }
+}
+
+.datepicker-input {
+  width: 100%;
+}
+
+.datepicker-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,49 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 64px;
+  border-radius: 4px;
+  stroke-width: 1;
+  overflow: hidden; // Add this line
+
+  &.info {
+    background-color: var(--info-color);
+    stroke: var(--info-color);
+  }
+
+  &.warning {
+    background-color: var(--warning-color);
+    stroke: var(--warning-color);
+  }
+
+  &.error {
+    background-color: var(--error-color);
+    stroke: var(--error-color);
+  }
+
+  &.success {
+    background-color: var(--success-color);
+    stroke: var(--success-color);
+  }
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+}
+
+.banner-text {
+  margin-left: 16px;
+}
+
+.find-out-more {
+  margin-left: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  margin-left: auto;
+}

@@ -1,0 +1,26 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #sidenav
+    class="nav-rail"
+    [mode]="isMobile ? 'over' : 'side'"
+    [opened]="showNavRail"
+  >
+    <nav class="nav-rail-items">
+      <a mat-button [routerLink]="['/home']" routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+        <span *ngIf="!isMobile">Home</span>
+      </a>
+      <a mat-button [routerLink]="['/about']" routerLinkActive="active">
+        <mat-icon>info</mat-icon>
+        <span *ngIf="!isMobile">About</span>
+      </a>
+      <a mat-button [routerLink]="['/reports']" routerLinkActive="active">
+        <mat-icon>info</mat-icon>
+        <span *ngIf="!isMobile">Reports</span>
+      </a>
+    </nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

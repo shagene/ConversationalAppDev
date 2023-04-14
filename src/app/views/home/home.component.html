@@ -1,0 +1,28 @@
+<div class="page-content">
+  <app-header
+    [pageTitle]="'Your Page Title'"
+    [breadcrumbs]="['Home', 'Page1', 'Page2']"
+  ></app-header>
+  <div style="padding-top: 8px"></div>
+  <app-banner
+    icon="info"
+    text="This is an informational banner"
+    colorClass="info"
+    moreInfoRoute="/more-info"
+  ></app-banner>
+  <div style="padding-top: 8px"></div>
+  <app-banner
+    icon="warning"
+    text="This is a warning banner"
+    colorClass="warning"
+  ></app-banner>
+  <div style="padding-top: 8px"></div>
+  <app-banner
+    icon="error"
+    text="This is an error banner"
+    colorClass="error"
+    moreInfoRoute="/more-info"
+  ></app-banner>
+  <div style="padding-top: 8px"></div>
+  <div style="text-align: center">Content goes here</div>
+</div>
