@@ -12,17 +12,17 @@
 .nav-rail {
   width: var(--nav-rail-width);
   z-index: 1;
-  background-color: #333333;
+  background-color: var(--navrail-bg);
 }
 
 .nav-rail.nav-rail-collapsed {
   width: var(--nav-rail-collapsed-width);
-  background-color: #333333;
+  background-color: var(--navrail-bg);
 }
 
 .nav-rail-mobile {
   width: var(--nav-rail-width);
-  background-color: #333333;
+  background-color: var(--navrail-bg);
 }
 
 .mat-sidenav-content {

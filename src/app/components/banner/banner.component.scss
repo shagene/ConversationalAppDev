@@ -5,27 +5,54 @@
   padding: 0 16px;
   height: 64px;
   border-radius: 4px;
-  stroke-width: 1;
+  border-width: 1;
   overflow: hidden; // Add this line
 
   &.info {
-    background-color: var(--info-color);
-    stroke: var(--info-color);
+    background-color: var(--info-color-bg);
+    border: 1px solid var(--info-color-border);
   }
 
   &.warning {
-    background-color: var(--warning-color);
-    stroke: var(--warning-color);
+    background-color: var(--warning-color-bg);
+    border: 1px solid var(--warning-color-border);
   }
 
   &.error {
-    background-color: var(--error-color);
-    stroke: var(--error-color);
+    background-color: var(--error-color-bg);
+    border: 1px solid var(--error-color-border);
   }
 
   &.success {
-    background-color: var(--success-color);
-    stroke: var(--success-color);
+    background-color: var(--success-color-bg);
+    border: 1px solid var(--success-color-border);
+  }
+
+  &.new-feature {
+    background-color: var(--new-feature-color-bg);
+    border: 1px solid var(--new-feature-color-border);
+  }
+}
+
+.mat-icon {
+  &.info {
+    color: var(--info-color-border);
+  }
+
+  &.warning {
+    color: var(--warning-color-border);
+  }
+
+  &.error {
+    color: var(--error-color-border);
+  }
+
+  &.success {
+    color: var(--success-color-border);
+  }
+
+  &.new-feature {
+    color: var(--new-feature-color-border);
   }
 }
 

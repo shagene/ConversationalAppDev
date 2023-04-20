@@ -1,27 +1,42 @@
-# Axv1
+# ConversationalAppDev
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+ConversationalAppDev is an Angular web application built with the help of OpenAI's ChatGPT. The application demonstrates how to leverage AI-powered chat models to streamline the development process and improve the overall user experience.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- App Bar: A responsive app bar that adapts to different screen sizes and provides smooth navigation.
+- Nav Rail: A side navigation rail with icons and labels that automatically adjust based on screen size.
+- Input Component: A reusable input component that supports text input and date pickers, complete with validation and custom styles.
+- Mobile Responsiveness: The application is designed with mobile-first principles to ensure a seamless experience on various devices.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run the application locally, follow these steps:
 
-## Build
+1. Clone the repository:
+git clone https://github.com/shagene/ConversationalAppDev.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Change directory to the project folder:
+cd ConversationalAppDev
 
-## Running unit tests
+3. Install dependencies:
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Start the development server:
+ng serve
 
-## Running end-to-end tests
+5. Open your browser and navigate to `http://localhost:4200/`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies
 
-## Further help
+- Angular: A platform for building web applications with a component-based architecture.
+- Angular Material: A UI component library for Angular applications that provides Material Design components.
+- ChatGPT: OpenAI's large language model, based on the GPT-4 architecture, which provides AI-powered assistance for software development.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contributing
+
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before submitting a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).

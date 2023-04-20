@@ -36,3 +36,10 @@
   width: 240px;
   background-color: #333333;
 }
+
+.theme-toggle-button {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1000;
+}

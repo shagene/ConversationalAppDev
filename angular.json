@@ -32,7 +32,9 @@
             "styles": [
               "src/custom_theme.scss",
               "src/custom_styles.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/themes/theme1.scss",
+              "src/themes/theme2.scss"
             ],
             "scripts": []
           },
@@ -97,7 +99,9 @@
             "styles": [
               "src/custom_theme.scss",
               "src/custom_styles.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/themes/theme1.scss",
+              "src/themes/theme2.scss"
             ],
             "scripts": []
           }

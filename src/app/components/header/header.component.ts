@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -10,4 +11,6 @@ export class HeaderComponent {
   pageTitle!: string;
   @Input()
   breadcrumbs!: string[];
+
+  constructor(public themeService: ThemeService) { }
 }

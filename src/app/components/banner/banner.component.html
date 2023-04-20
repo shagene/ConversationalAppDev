@@ -1,12 +1,12 @@
 <div class="banner-container" *ngIf="showBanner" [ngClass]="colorClass">
   <div class="banner-content">
-    <mat-icon>{{ icon }}</mat-icon>
+    <mat-icon [ngClass]="colorClass">{{ icon }}</mat-icon>
     <span class="banner-text">{{ text }}</span>
     <a *ngIf="moreInfoRoute" [routerLink]="moreInfoRoute" class="find-out-more"
       >Find out more</a
     >
   </div>
   <button mat-icon-button (click)="closeBanner()">
-    <mat-icon>close</mat-icon>
+    <mat-icon [ngClass]="colorClass">close</mat-icon>
   </button>
 </div>
