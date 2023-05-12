@@ -13,6 +13,8 @@ import { ReportsComponent } from './views/reports/reports.component';
 import { MoreInfoComponent } from './views/more-info/more-info.component';
 import { SharedModule } from './components/shared.module';
 import { ThemeService } from './services/theme.service';
+import { FooterComponent } from './global-components/footer/footer.component';
+import { NewPageComponent } from './views/new-page/new-page.component';
 
 
 
@@ -24,7 +26,9 @@ import { ThemeService } from './services/theme.service';
     HomeComponent,
     AboutComponent,
     ReportsComponent,
-    MoreInfoComponent
+    MoreInfoComponent,
+    FooterComponent,
+    NewPageComponent
   ],
   imports: [
     BrowserModule,

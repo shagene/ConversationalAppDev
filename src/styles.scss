@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@use "sass:color";
+
 @import "./themes/theme1.scss";
 @import "./themes/theme2.scss";
 html,
@@ -12,4 +14,32 @@ body {
 
 .page-content {
   padding: 24px;
+}
+
+// Scrollbar Code
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color); // Keeps the same color on hover
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--primary-color); // Keeps the same color when clicked
+}
+
+html {
+  scrollbar-color: var(--primary-color) rgba(0, 0, 0, 0.1);
 }

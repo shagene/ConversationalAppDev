@@ -2,8 +2,9 @@
   <mat-sidenav
     #sidenav
     class="nav-rail"
-    [mode]="isMobile ? 'over' : 'side'"
+    [mode]="isMobile ? 'side' : 'side'"
     [opened]="showNavRail"
+    [class.nav-rail-collapsed]="collapsed"
   >
     <nav class="nav-rail-items">
       <a mat-button [routerLink]="['/home']" routerLinkActive="active">
@@ -20,7 +21,10 @@
       </a>
     </nav>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content
+    [style.marginLeft.px]="isMobile ? 0 : collapsed ? 72 : 240"
+  >
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

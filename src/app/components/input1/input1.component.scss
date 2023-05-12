@@ -5,26 +5,26 @@
 
 .mat-form-field-appearance-outline {
   .mat-form-field-outline {
-    color: #93186c;
+    color: var(--primary-color);
   }
 
   .mat-form-field-ripple {
-    background-color: #93186c;
+    background-color: var(--primary-color);
   }
 
   input.mat-input-element {
     &:focus {
       + .mat-form-field-ripple {
-        background-color: #93186c;
+        background-color: var(--primary-color);
       }
     }
   }
 
   .mat-form-field-label {
-    color: #93186c;
+    color: var(--primary-color);
     &:not(.mat-form-field-empty) {
       &::after {
-        background-color: #93186c;
+        background-color: var(--primary-color);
       }
     }
   }

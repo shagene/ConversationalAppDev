@@ -5,13 +5,15 @@ import { BannerComponent } from './banner/banner.component';
 import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { Input1Component } from './input1/input1.component';
+import { InformativeCardComponent } from './cards/informative-card/informative-card.component';
 
 
 @NgModule({
     declarations: [
         HeaderComponent,
         BannerComponent,
-        Input1Component
+        Input1Component,
+        InformativeCardComponent
     ],
     imports: [
         CommonModule,
@@ -21,7 +23,8 @@ import { Input1Component } from './input1/input1.component';
     exports: [
         HeaderComponent,
         BannerComponent,
-        Input1Component
+        Input1Component,
+        InformativeCardComponent,
     ]
 })
 export class SharedModule { }

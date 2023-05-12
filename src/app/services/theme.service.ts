@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
     private activeTheme = 'theme1';
+    themeChanged$: any;
+
 
     setActiveTheme(theme: string) {
         this.activeTheme = theme;

@@ -3,6 +3,7 @@ import { NavRailComponent } from './global-components/nav-rail/nav-rail.componen
 import { NavRailService } from './services/nav-rail.service';
 import { ThemeService } from './services/theme.service';
 import { Subscription } from 'rxjs';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

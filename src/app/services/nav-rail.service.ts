@@ -1,35 +1,25 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-
+// import { Injectable } from '@angular/core';
+// import { BehaviorSubject } from 'rxjs';
 // @Injectable({
 //     providedIn: 'root'
 // })
 // export class NavRailService {
-//     private navRailVisible = new BehaviorSubject<boolean>(true);
-//     private mobileNavRailVisible = new BehaviorSubject<boolean>(false);
-
-//     navRailVisible$ = this.navRailVisible.asObservable();
-//     mobileNavRailVisible$ = this.mobileNavRailVisible.asObservable();
-//     navRailState$: any;
+//     private navRailStateSource = new BehaviorSubject<boolean>(false);
+//     navRailState$ = this.navRailStateSource.asObservable();
 
 //     constructor() { }
 
-//     toggleNavRail() {
-//         this.navRailVisible.next(!this.navRailVisible.value);
+//     toggleNavRail(state: boolean): void {
+//         this.navRailStateSource.next(state);
 //     }
 
-//     toggleMobileNavRail() {
-//         this.mobileNavRailVisible.next(!this.mobileNavRailVisible.value);
-//     }
-
-//     setNavRailVisibility(visible: boolean) {
-//         this.navRailVisible.next(visible);
-//     }
-
-//     setMobileNavRailVisibility(visible: boolean) {
-//         this.mobileNavRailVisible.next(visible);
+//     getCurrentNavRailState(): boolean {
+//         return this.navRailStateSource.getValue();
 //     }
 // }
+
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
@@ -38,10 +28,17 @@ export class NavRailService {
     private navRailStateSource = new BehaviorSubject<boolean>(false);
     navRailState$ = this.navRailStateSource.asObservable();
 
+    private collapsedStateSource = new BehaviorSubject<boolean>(false);
+    collapsedState$ = this.collapsedStateSource.asObservable(); // Make sure this line exists
+
     constructor() { }
 
     toggleNavRail(state: boolean): void {
         this.navRailStateSource.next(state);
+    }
+
+    toggleCollapsedState(state: boolean): void { // Make sure the method name is 'toggleCollapsedState'
+        this.collapsedStateSource.next(state);
     }
 
     getCurrentNavRailState(): boolean {
