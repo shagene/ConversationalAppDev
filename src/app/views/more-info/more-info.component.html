@@ -1,3 +1,11 @@
 <div class="page-content">
-  <div style="text-align: center">This is the more info page</div>
+  <div style="text-align: center">
+    <div class="flutter-app" #container>
+      <ng-flutter
+        src="flutter/main.dart.js"
+        assetBase="/flutter/"
+        (appLoaded)="onFlutterAppLoaded($event)"
+      ></ng-flutter>
+    </div>
+  </div>
 </div>

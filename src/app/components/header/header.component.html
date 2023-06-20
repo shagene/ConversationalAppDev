@@ -12,8 +12,19 @@
     </ng-container>
   </div>
   <div class="title-row">
-    <span class="page-title" [style.color]="'var(--primary-color)'">
-      {{ pageTitle }}
-    </span>
+    <div>
+      <span class="page-title" [style.color]="'var(--primary-color)'">
+        {{ pageTitle }}
+      </span>
+    </div>
+    <div style="display: flex">
+      <div>
+        <mat-icon class="example-icon">keyboard_arrow_right</mat-icon>
+      </div>
+
+      <div style="padding-right: 10px">
+        <mat-icon class="example-icon">keyboard_arrow_right</mat-icon>
+      </div>
+    </div>
   </div>
 </div>

@@ -6,6 +6,7 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { Input1Component } from './input1/input1.component';
 import { InformativeCardComponent } from './cards/informative-card/informative-card.component';
+import { FlutterExample1Component } from './flutter-example1/flutter-example1.component';
 
 
 @NgModule({
@@ -13,13 +14,15 @@ import { InformativeCardComponent } from './cards/informative-card/informative-c
         HeaderComponent,
         BannerComponent,
         Input1Component,
-        InformativeCardComponent
+        InformativeCardComponent,
+
+
     ],
     imports: [
         CommonModule,
         MaterialModule,
         RouterModule,
-    ],
+        FlutterExample1Component],
     exports: [
         HeaderComponent,
         BannerComponent,
