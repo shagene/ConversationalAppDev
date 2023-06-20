@@ -25,12 +25,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              {
-                "input": "ngflutter/build/web/",
-                "glob": "**/*",
-                "output": "/ngflutter/"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/custom_theme.scss",
@@ -40,11 +35,7 @@
               "src/themes/theme2.scss"
             ],
             "scripts": [
-              {
-                "input": "ngflutter/build/web/flutter.js",
-                "inject": true,
-                "bundleName": "ngflutter"
-              }
+              
             ]
           },
           "configurations": {

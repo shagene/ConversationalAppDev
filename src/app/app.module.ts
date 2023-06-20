@@ -15,7 +15,6 @@ import { SharedModule } from './components/shared.module';
 import { ThemeService } from './services/theme.service';
 import { FooterComponent } from './global-components/footer/footer.component';
 import { NewPageComponent } from './views/new-page/new-page.component';
-import { FlutterExample1Component } from "./components/flutter-example1/flutter-example1.component";
 
 
 
@@ -40,7 +39,6 @@ import { FlutterExample1Component } from "./components/flutter-example1/flutter-
     SharedModule,
     MaterialModule,
     OverlayModule,
-    FlutterExample1Component
   ]
 })
 export class AppModule { }
