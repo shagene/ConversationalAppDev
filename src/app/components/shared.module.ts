@@ -6,6 +6,7 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { Input1Component } from './input1/input1.component';
 import { InformativeCardComponent } from './cards/informative-card/informative-card.component';
+import { OtherCardComponent } from './cards/other-card/other-card.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { InformativeCardComponent } from './cards/informative-card/informative-c
         BannerComponent,
         Input1Component,
         InformativeCardComponent,
+        OtherCardComponent,
 
 
     ],
@@ -26,6 +28,7 @@ import { InformativeCardComponent } from './cards/informative-card/informative-c
         BannerComponent,
         Input1Component,
         InformativeCardComponent,
+        OtherCardComponent
     ]
 })
 export class SharedModule { }

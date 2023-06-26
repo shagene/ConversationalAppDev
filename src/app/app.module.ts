@@ -15,6 +15,7 @@ import { SharedModule } from './components/shared.module';
 import { ThemeService } from './services/theme.service';
 import { FooterComponent } from './global-components/footer/footer.component';
 import { NewPageComponent } from './views/new-page/new-page.component';
+import { ThemeSwitcherComponent } from './global-components/theme-switcher/theme-switcher.component';
 
 
 
@@ -28,7 +29,8 @@ import { NewPageComponent } from './views/new-page/new-page.component';
     ReportsComponent,
     MoreInfoComponent,
     FooterComponent,
-    NewPageComponent
+    NewPageComponent,
+    ThemeSwitcherComponent
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent],

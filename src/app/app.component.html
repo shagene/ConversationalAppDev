@@ -1,11 +1,3 @@
 <app-app-bar (toggleNavRail)="toggleNavRail()"></app-app-bar>
 <app-nav-rail></app-nav-rail>
-<button
-  mat-fab
-  [ngStyle]="{ 'background-color': 'var(--fab-color)' }"
-  class="theme-toggle-button"
-  (click)="toggleTheme()"
-  aria-label="Toggle Theme"
->
-  <mat-icon>palette</mat-icon>
-</button>
+<app-theme-switcher></app-theme-switcher>

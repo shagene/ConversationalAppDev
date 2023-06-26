@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./reports.component.scss']
 })
 export class ReportsComponent {
-
+  cards = [
+    {
+      title: 'Card 1',
+      content: 'This is card 1.',
+      imageUrl: 'https://example.com/image1.jpg'
+    },
+    {
+      title: 'Card 2',
+      content: 'This is card 2.',
+      imageUrl: 'https://example.com/image2.jpg'
+    }];
 }

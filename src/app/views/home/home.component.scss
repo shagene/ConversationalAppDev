@@ -1,15 +1,15 @@
-.page-content {
-  max-width: 1200px; // Adjust this value according to your desired max-width
-  margin: 0 auto;
-  padding: 0 16px; // You can add some padding on the sides for smaller screens
-}
+// .page-content {
+//   max-width: 1200px; // Adjust this value according to your desired max-width
+//   margin: 0 auto;
+//   padding: 0 16px; // You can add some padding on the sides for smaller screens
+// }
 
-// Optional: Adjust the max-width and/or margins for larger screens
-@media (min-width: 1600px) {
-  .page-content {
-    max-width: 1400px;
-  }
-}
+// // Optional: Adjust the max-width and/or margins for larger screens
+// @media (min-width: 1600px) {
+//   .page-content {
+//     max-width: 1400px;
+//   }
+// }
 
 .card-container {
   display: flex;
